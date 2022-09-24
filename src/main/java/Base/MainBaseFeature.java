@@ -3,7 +3,7 @@ package Base;
 import java.io.FileInputStream;
 
 import java.io.IOException;
-import java.util.Date;
+import java.util.*;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +20,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
@@ -32,21 +31,14 @@ public class MainBaseFeature {
 	public  static WebDriver driver;
     Properties prop = new Properties();
 	
-	
-	//SoftAssert soft = new SoftAssert();
     
-	
     public String readPropertyFile(String value) throws IOException
     {
-        //Properties prop = new Properties();
-        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.32"
-        		+ "\\\\src\\\\main\\\\java\\\\Configuration\\\\configDetails.properties");
-        prop.load(file);
+    	prop.load(new FileInputStream("config.properties"));
         return prop.getProperty(value);
-        
     }
     
-   
+    
     public void initialization() throws IOException
     {
         String browserName = readPropertyFile("browserType");
@@ -88,8 +80,7 @@ public class MainBaseFeature {
         //driver.get(readPropertyFile("url"));
         
     }
-    
-    
+      
     //EXTENT
     public static ExtentSparkReporter spark;
     public static ExtentReports extent;
@@ -148,10 +139,9 @@ public class MainBaseFeature {
     public void tearDown()
     
     {
-    	//System.out.println("flush enter listener");
+    	
         extent.flush();
-        //System.out.println("flush exit listener");
-        //driver.close();
+        
     }
 	
 
