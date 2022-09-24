@@ -25,31 +25,7 @@ public class Suggestion extends MainBaseFeature{
 	SoftAssert softAssert = new SoftAssert();
 	Properties prop1 = new Properties();
 	ReadExcel useData = new ReadExcel();
-	
-//--------------------------------------------extant----------------------------//
-    /*
-    @BeforeTest
-	public void extentReport()
-	{
-		beforeTest();
-	}
-	
-	@AfterTest
-	public void endReport()
-	{
-		afterTest();
-		
-	}
-	
-	@AfterMethod
-	public void exit(ITestResult result) throws IOException 
-	{	
-		afterMethod(result);
-		
-	}
-	*/
-	//--------------------------------------------extant-------------------------------//
-	
+
 	@Test
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("To Check the suggestion API is working properly")

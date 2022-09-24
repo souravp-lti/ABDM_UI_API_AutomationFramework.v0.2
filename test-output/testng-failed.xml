@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="HBI_UI.Test_HBI_Foreign_dashboard_visible">
+      <class name="UI_HBI.Test_HBI_Foreign_dashboard_visible">
         <methods>
-          <include name="dashboard_will_be_displayed"/>
-          <include name="getResult"/>
+          <include name="tearDown"/>
           <include name="user_enters_Healthcare_gmail_com_and_Healthcare"/>
           <include name="beforeSuit"/>
-          <include name="tearDown"/>
+          <include name="dashboard_will_be_displayed"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- HBI_UI.Test_HBI_Foreign_dashboard_visible -->
+      </class> <!-- UI_HBI.Test_HBI_Foreign_dashboard_visible -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -32,30 +32,6 @@ public class Test_HBI_HomePage_Features_Visible extends MainBaseFeature {
     SoftAssert softAssert = new SoftAssert();
     ReadExcel takeData = new ReadExcel();
     
-    //--------------------------------------------extant----------------------------//
-    /*
-    @BeforeTest
-	public void extentReport()
-	{
-		beforeTest();
-	}
-	
-	@AfterTest
-	public void endReport()
-	{
-		afterTest();
-		driver.quit();
-	}
-	
-	@AfterMethod
-	public void exit(ITestResult result) throws IOException 
-	{	
-		afterMethod(result);
-		
-	}
-	*/
-	//--------------------------------------------extant-------------------------------//
-    
     @Test(priority = 1)
     @Severity(SeverityLevel.BLOCKER)
 	@Description("user Launch Chrome") 

@@ -3,7 +3,7 @@ package Base;
 import java.io.FileInputStream;
 
 import java.io.IOException;
-
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -24,6 +24,7 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+//import Utility.ScreenShot;
 import Utility.ScreenShot;
 
 
@@ -39,8 +40,8 @@ public class MainBaseFeature {
     public String readPropertyFile(String value) throws IOException
     {
         //Properties prop = new Properties();
-        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.24\\"
-        		+ "\\src\\\\main\\\\java\\\\Configuration\\\\configDetails.properties");
+        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.32"
+        		+ "\\\\src\\\\main\\\\java\\\\Configuration\\\\configDetails.properties");
         prop.load(file);
         return prop.getProperty(value);
         
@@ -52,7 +53,8 @@ public class MainBaseFeature {
         String browserName = readPropertyFile("browserType");
         if(browserName.equalsIgnoreCase("chrome"))
         {
-        System.setProperty("webdriver.chrome.driver", readPropertyFile("webDriverPath"));
+        System.setProperty("webdriver.chrome.driver", readPropertyFile("sysFileLocation")+readPropertyFile("packageName")+
+        		"\\\\Drivers\\\\chromedriver2.exe");
         ChromeOptions opt1 = new ChromeOptions(); 
         //opt1.addArguments("--disable-notifications"); // to disable browser exception
         //opt1.addArguments("--headless");
@@ -95,9 +97,13 @@ public class MainBaseFeature {
     public static ExtentTest test;
 	
     @BeforeSuite
-    public void beforeSuit()
+    public void beforeSuit() throws IOException
     {
-        spark = new ExtentSparkReporter("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.24\\\\EXTENT_REPORT"+"\\\\ExtentReport.html");
+    	Date currentDate = new Date();
+    	String date = currentDate.toString().replace(" ", "-").replace(":", "-");
+        //spark = new ExtentSparkReporter("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.24\\\\EXTENT_REPORT"+"\\\\ExtentReport.html");
+        spark = new ExtentSparkReporter(readPropertyFile("sysFileLocation")
+        		+ readPropertyFile("packageName")+"\\\\EXTENT_REPORT"+"\\\\"+date+"--"+"ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
          
@@ -112,17 +118,16 @@ public class MainBaseFeature {
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
-        	//System.out.println("enter failure listener");
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
-            //System.out.println("enter failure listener1");
+         
             test.fail(result.getThrowable());
-            //System.out.println("enter failure listener2");
             
-            String screeshotPath = ScreenShot.failedTCSS(result.getName());
+            
+            String screeshotPath = ScreenShot.failedTCSS(result.getName(),readPropertyFile("sysFileLocation")+readPropertyFile("packageName")+"\\\\ScreenShots\\\\");
             
             test.fail("FAILED TEST CASE SCREENSHOT", MediaEntityBuilder.createScreenCaptureFromPath(screeshotPath).build());
             
-            System.out.println("exit failure listener");
+            
         }
         else if(result.getStatus() == ITestResult.SUCCESS)
         {
@@ -144,9 +149,10 @@ public class MainBaseFeature {
     public void tearDown()
     
     {
-    	System.out.println("flush enter listener");
+    	//System.out.println("flush enter listener");
         extent.flush();
-        System.out.println("flush exit listener");
+        //System.out.println("flush exit listener");
+        //driver.close();
     }
 	
 

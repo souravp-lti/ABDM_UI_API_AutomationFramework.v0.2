@@ -34,33 +34,7 @@ public class Test_HBI_Foreign_dashboard_visible extends MainBaseFeature{
     
     
     SoftAssert softAssert = new SoftAssert();
-    
-    //--------------------------------------------extant----------------------------//
-    /*
-    @BeforeTest
-	public void extentReport()
-	{
-		beforeTest();
-	}
-	
-	@AfterTest
-	public void endReport()
-	{
-		driver.quit();
-		afterTest();
-		
-	}
-	
-	@AfterMethod
-	public void exit(ITestResult result) throws IOException 
-	{	
-		afterMethod(result);
-		
-	}
-	*/
-	//--------------------------------------------extant-------------------------------//
-    
-    
+   
 	@Test(priority = 1)
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("user Launch Chrome browser") 
