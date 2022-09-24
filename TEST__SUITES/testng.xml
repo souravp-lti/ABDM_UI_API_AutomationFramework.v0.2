@@ -3,6 +3,7 @@
 <suite name="Suite">
 <listeners>
 </listeners>
+
   <test thread-count="5" name="Test">
     <classes>
       <class name="UI_HBI.Test_HBI_Foreign_dashboard_visible"/>

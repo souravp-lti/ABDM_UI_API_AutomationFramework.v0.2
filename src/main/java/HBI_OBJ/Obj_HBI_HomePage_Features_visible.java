@@ -12,7 +12,6 @@ import Base.MainBaseFeature;
 import Utility.ReadExcel;
 import io.qameta.allure.Step;
 
-
 public class Obj_HBI_HomePage_Features_visible extends MainBaseFeature {
 	
 	//protected WebDriver driver;	 

@@ -27,7 +27,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 //import Utility.ScreenShot;
 import Utility.ScreenShot;
 
-
 public class MainBaseFeature {
 	
 	public  static WebDriver driver;

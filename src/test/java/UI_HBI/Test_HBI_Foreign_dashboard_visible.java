@@ -22,7 +22,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-//
+
 @Listeners(Allure_Listener.class)   //IMPORTANT TO KNOW WHEN TO GO FOR SCREENSHOT
 public class Test_HBI_Foreign_dashboard_visible extends MainBaseFeature{
 	

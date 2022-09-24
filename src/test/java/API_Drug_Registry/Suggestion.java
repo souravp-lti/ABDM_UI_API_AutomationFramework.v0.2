@@ -20,7 +20,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-//
+
 public class Suggestion extends MainBaseFeature{
 	SoftAssert softAssert = new SoftAssert();
 	Properties prop1 = new Properties();
