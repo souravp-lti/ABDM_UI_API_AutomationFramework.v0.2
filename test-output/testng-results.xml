@@ -2,262 +2,270 @@
 <testng-results ignored="4" total="28" passed="22" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T22:11:15 IST" name="Suite" finished-at="2022-09-24T22:13:57 IST" duration-ms="162213">
+  <suite started-at="2022-09-25T23:51:16 IST" name="Suite" finished-at="2022-09-25T23:53:44 IST" duration-ms="147875">
     <groups>
     </groups>
-    <test started-at="2022-09-24T22:11:15 IST" name="Test" finished-at="2022-09-24T22:13:57 IST" duration-ms="162213">
+    <test started-at="2022-09-25T23:51:16 IST" name="Test" finished-at="2022-09-25T23:53:44 IST" duration-ms="147875">
       <class name="UI_HBI.Test_HBI_HomePage_Features_Visible">
-        <test-method signature="user_Launch_Chrome()[pri:1, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:43 IST" name="user_Launch_Chrome" finished-at="2022-09-24T22:13:44 IST" duration-ms="1058" status="PASS">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:15 IST" name="beforeSuit" finished-at="2022-09-25T23:51:16 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method signature="user_Launch_Chrome()[pri:1, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:16 IST" name="user_Launch_Chrome" finished-at="2022-09-25T23:51:19 IST" duration-ms="3012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_Launch_Chrome -->
-        <test-method signature="user_opens_the_URL()[pri:2, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:44 IST" name="user_opens_the_URL" finished-at="2022-09-24T22:13:49 IST" duration-ms="4981" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:19 IST" name="getResult" finished-at="2022-09-25T23:51:19 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=user_Launch_Chrome status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_Launch_Chrome()[pri:1, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="user_opens_the_URL()[pri:2, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:19 IST" name="user_opens_the_URL" finished-at="2022-09-25T23:51:24 IST" duration-ms="5091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_opens_the_URL -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:44 IST" name="getResult" finished-at="2022-09-24T22:13:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_Launch_Chrome status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_Launch_Chrome()[pri:1, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=user_opens_the_URL status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_opens_the_URL()[pri:2, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=user_opens_the_URL status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_opens_the_URL()[pri:2, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="homeButton_will_be_displayed()[pri:3, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="homeButton_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="7" status="PASS">
+        <test-method signature="homeButton_will_be_displayed()[pri:3, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="homeButton_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeButton_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homeButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.homeButton_will_be_displayed()[pri:3, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=homeButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.homeButton_will_be_displayed()[pri:3, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="recruitersDir_will_be_displayed()[pri:4, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="recruitersDir_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="8" status="PASS">
+        <test-method signature="recruitersDir_will_be_displayed()[pri:4, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="recruitersDir_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitersDir_will_be_displayed -->
-        <test-method signature="empDir_will_be_displayed()[pri:5, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="empDir_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=recruitersDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.recruitersDir_will_be_displayed()[pri:4, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="empDir_will_be_displayed()[pri:5, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="empDir_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- empDir_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=recruitersDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.recruitersDir_will_be_displayed()[pri:4, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=empDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.empDir_will_be_displayed()[pri:5, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=empDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.empDir_will_be_displayed()[pri:5, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="abtUs_will_be_displayed()[pri:6, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="abtUs_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="abtUs_will_be_displayed()[pri:6, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="abtUs_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abtUs_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=abtUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.abtUs_will_be_displayed()[pri:6, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=abtUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.abtUs_will_be_displayed()[pri:6, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="faq_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="faq_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="faq_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="faq_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- faq_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=faq_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.faq_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=faq_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.faq_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="contactUs_will_be_displayed()[pri:8, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="contactUs_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="contactUs_will_be_displayed()[pri:8, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="contactUs_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUs_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=contactUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.contactUs_will_be_displayed()[pri:8, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=contactUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.contactUs_will_be_displayed()[pri:8, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="dashboardButton_will_be_displayed()[pri:9, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="dashboardButton_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="8" status="PASS">
+        <test-method signature="dashboardButton_will_be_displayed()[pri:9, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="dashboardButton_will_be_displayed" finished-at="2022-09-25T23:51:24 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardButton_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="getResult" finished-at="2022-09-25T23:51:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dashboardButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.dashboardButton_will_be_displayed()[pri:9, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=dashboardButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.dashboardButton_will_be_displayed()[pri:9, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="grievanceButton_will_be_displayed()[pri:10, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="grievanceButton_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="4" status="PASS">
+        <test-method signature="grievanceButton_will_be_displayed()[pri:10, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:24 IST" name="grievanceButton_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- grievanceButton_will_be_displayed -->
-        <test-method signature="health_care_textbox_will_be_displayed()[pri:11, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="health_care_textbox_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=grievanceButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.grievanceButton_will_be_displayed()[pri:10, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="health_care_textbox_will_be_displayed()[pri:11, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="health_care_textbox_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- health_care_textbox_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=grievanceButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.grievanceButton_will_be_displayed()[pri:10, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=health_care_textbox_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.health_care_textbox_will_be_displayed()[pri:11, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="search_button_will_be_displayed()[pri:12, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="search_button_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="15" status="PASS">
+        <test-method signature="search_button_will_be_displayed()[pri:12, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="search_button_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_button_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=health_care_textbox_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.health_care_textbox_will_be_displayed()[pri:11, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=search_button_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.search_button_will_be_displayed()[pri:12, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=search_button_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.search_button_will_be_displayed()[pri:12, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="regd_prof_num_will_be_displayed()[pri:13, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="regd_prof_num_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="2" status="PASS">
+        <test-method signature="regd_prof_num_will_be_displayed()[pri:13, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="regd_prof_num_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regd_prof_num_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=regd_prof_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.regd_prof_num_will_be_displayed()[pri:13, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=regd_prof_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.regd_prof_num_will_be_displayed()[pri:13, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doc_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.doc_num_will_be_displayed()[pri:14, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="doc_num_will_be_displayed()[pri:14, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="doc_num_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="doc_num_will_be_displayed()[pri:14, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="doc_num_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doc_num_will_be_displayed -->
-        <test-method signature="nurse_num_will_be_displayed()[pri:15, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="nurse_num_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doc_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.doc_num_will_be_displayed()[pri:14, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="nurse_num_will_be_displayed()[pri:15, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="nurse_num_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nurse_num_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=nurse_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.nurse_num_will_be_displayed()[pri:15, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=nurse_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.nurse_num_will_be_displayed()[pri:15, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="other_regd_num_will_be_displayed()[pri:16, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="other_regd_num_will_be_displayed" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method signature="other_regd_num_will_be_displayed()[pri:16, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="other_regd_num_will_be_displayed" finished-at="2022-09-25T23:51:25 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- other_regd_num_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c]" started-at="2022-09-24T22:13:49 IST" name="getResult" finished-at="2022-09-24T22:13:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:51:25 IST" name="getResult" finished-at="2022-09-25T23:51:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=other_regd_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.other_regd_num_will_be_displayed()[pri:16, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@58a2b4c] output={null}]]]>
+                <![CDATA[[TestResult name=other_regd_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.other_regd_num_will_be_displayed()[pri:16, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI_HBI.Test_HBI_HomePage_Features_Visible@4315e9af]" started-at="2022-09-25T23:53:44 IST" name="tearDown" finished-at="2022-09-25T23:53:50 IST" duration-ms="6476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- UI_HBI.Test_HBI_HomePage_Features_Visible -->
       <class name="API_Drug_Registry.Suggestion">
-        <test-method signature="suggestionSearchTextBox()[pri:0, instance:API_Drug_Registry.Suggestion@7159a5cd]" started-at="2022-09-24T22:13:49 IST" name="suggestionSearchTextBox" finished-at="2022-09-24T22:13:57 IST" duration-ms="7483" status="PASS">
+        <test-method signature="suggestionSearchTextBox()[pri:0, instance:API_Drug_Registry.Suggestion@4ca8dbfa]" started-at="2022-09-25T23:53:39 IST" name="suggestionSearchTextBox" finished-at="2022-09-25T23:53:44 IST" duration-ms="4894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suggestionSearchTextBox -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:API_Drug_Registry.Suggestion@7159a5cd]" started-at="2022-09-24T22:13:57 IST" name="getResult" finished-at="2022-09-24T22:13:57 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:API_Drug_Registry.Suggestion@4ca8dbfa]" started-at="2022-09-25T23:53:44 IST" name="getResult" finished-at="2022-09-25T23:53:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=suggestionSearchTextBox status=SUCCESS method=Suggestion.suggestionSearchTextBox()[pri:0, instance:API_Drug_Registry.Suggestion@7159a5cd] output={null}]]]>
+                <![CDATA[[TestResult name=suggestionSearchTextBox status=SUCCESS method=Suggestion.suggestionSearchTextBox()[pri:0, instance:API_Drug_Registry.Suggestion@4ca8dbfa] output={null}]]]>
               </value>
             </param>
           </params>
@@ -266,71 +274,67 @@
         </test-method> <!-- getResult -->
       </class> <!-- API_Drug_Registry.Suggestion -->
       <class name="UI_HBI.Test_HBI_Foreign_dashboard_visible">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:14 IST" name="beforeSuit" finished-at="2022-09-24T22:11:15 IST" duration-ms="983" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuit -->
-        <test-method signature="user_Launch_Chrome_browser()[pri:1, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:15 IST" name="user_Launch_Chrome_browser" finished-at="2022-09-24T22:11:19 IST" duration-ms="4432" status="PASS">
+        <test-method signature="user_Launch_Chrome_browser()[pri:1, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:25 IST" name="user_Launch_Chrome_browser" finished-at="2022-09-25T23:51:26 IST" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_Launch_Chrome_browser -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:19 IST" name="getResult" finished-at="2022-09-24T22:11:19 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:26 IST" name="getResult" finished-at="2022-09-25T23:51:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_Launch_Chrome_browser status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_Launch_Chrome_browser()[pri:1, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=user_Launch_Chrome_browser status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_Launch_Chrome_browser()[pri:1, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="user_opens_URL()[pri:2, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:19 IST" name="user_opens_URL" finished-at="2022-09-24T22:11:32 IST" duration-ms="12712" status="PASS">
+        <test-method signature="user_opens_URL()[pri:2, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:26 IST" name="user_opens_URL" finished-at="2022-09-25T23:51:28 IST" duration-ms="2300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_opens_URL -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:32 IST" name="getResult" finished-at="2022-09-24T22:11:32 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:28 IST" name="getResult" finished-at="2022-09-25T23:51:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_opens_URL status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_opens_URL()[pri:2, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=user_opens_URL status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_opens_URL()[pri:2, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="user_clicks_on_login_Register_button()[pri:3, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:32 IST" name="user_clicks_on_login_Register_button" finished-at="2022-09-24T22:11:38 IST" duration-ms="5323" status="PASS">
+        <test-method signature="user_clicks_on_login_Register_button()[pri:3, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:28 IST" name="user_clicks_on_login_Register_button" finished-at="2022-09-25T23:51:33 IST" duration-ms="5306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_clicks_on_login_Register_button -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:38 IST" name="getResult" finished-at="2022-09-24T22:11:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:33 IST" name="getResult" finished-at="2022-09-25T23:51:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_clicks_on_login_Register_button status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_clicks_on_login_Register_button()[pri:3, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=user_clicks_on_login_Register_button status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_clicks_on_login_Register_button()[pri:3, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="user_selects_Foreign_Employer_and_clicks_on_Login_button()[pri:4, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:38 IST" name="user_selects_Foreign_Employer_and_clicks_on_Login_button" finished-at="2022-09-24T22:11:38 IST" duration-ms="563" status="PASS">
+        <test-method signature="user_selects_Foreign_Employer_and_clicks_on_Login_button()[pri:4, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:33 IST" name="user_selects_Foreign_Employer_and_clicks_on_Login_button" finished-at="2022-09-25T23:51:35 IST" duration-ms="1308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_selects_Foreign_Employer_and_clicks_on_Login_button -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:38 IST" name="getResult" finished-at="2022-09-24T22:11:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:35 IST" name="getResult" finished-at="2022-09-25T23:51:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_selects_Foreign_Employer_and_clicks_on_Login_button status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_selects_Foreign_Employer_and_clicks_on_Login_button()[pri:4, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=user_selects_Foreign_Employer_and_clicks_on_Login_button status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_selects_Foreign_Employer_and_clicks_on_Login_button()[pri:4, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="user_enters_Healthcare_gmail_com_and_Healthcare()[pri:5, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:11:38 IST" name="user_enters_Healthcare_gmail_com_and_Healthcare" finished-at="2022-09-24T22:13:11 IST" duration-ms="92387" status="FAIL">
+        <test-method signature="user_enters_Healthcare_gmail_com_and_Healthcare()[pri:5, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:51:35 IST" name="user_enters_Healthcare_gmail_com_and_Healthcare" finished-at="2022-09-25T23:53:06 IST" duration-ms="91454" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -376,33 +380,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_enters_Healthcare_gmail_com_and_Healthcare -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:11 IST" name="getResult" finished-at="2022-09-24T22:13:12 IST" duration-ms="568" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:53:07 IST" name="getResult" finished-at="2022-09-25T23:53:07 IST" duration-ms="626" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_enters_Healthcare_gmail_com_and_Healthcare status=FAILURE method=Test_HBI_Foreign_dashboard_visible.user_enters_Healthcare_gmail_com_and_Healthcare()[pri:5, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=user_enters_Healthcare_gmail_com_and_Healthcare status=FAILURE method=Test_HBI_Foreign_dashboard_visible.user_enters_Healthcare_gmail_com_and_Healthcare()[pri:5, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="click_on_Login()[pri:6, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:12 IST" name="click_on_Login" finished-at="2022-09-24T22:13:12 IST" duration-ms="9" status="PASS">
+        <test-method signature="click_on_Login()[pri:6, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:53:07 IST" name="click_on_Login" finished-at="2022-09-25T23:53:07 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_on_Login -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:12 IST" name="getResult" finished-at="2022-09-24T22:13:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:53:07 IST" name="getResult" finished-at="2022-09-25T23:53:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=click_on_Login status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.click_on_Login()[pri:6, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=click_on_Login status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.click_on_Login()[pri:6, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="dashboard_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:12 IST" name="dashboard_will_be_displayed" finished-at="2022-09-24T22:13:42 IST" duration-ms="30149" status="FAIL">
+        <test-method signature="dashboard_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:53:07 IST" name="dashboard_will_be_displayed" finished-at="2022-09-25T23:53:37 IST" duration-ms="30103" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -448,21 +452,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboard_will_be_displayed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:42 IST" name="getResult" finished-at="2022-09-24T22:13:43 IST" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8]" started-at="2022-09-25T23:53:38 IST" name="getResult" finished-at="2022-09-25T23:53:39 IST" duration-ms="618" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dashboard_will_be_displayed status=FAILURE method=Test_HBI_Foreign_dashboard_visible.dashboard_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61] output={null}]]]>
+                <![CDATA[[TestResult name=dashboard_will_be_displayed status=FAILURE method=Test_HBI_Foreign_dashboard_visible.dashboard_will_be_displayed()[pri:7, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@18ac53e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI_HBI.Test_HBI_Foreign_dashboard_visible@69e05f61]" started-at="2022-09-24T22:13:57 IST" name="tearDown" finished-at="2022-09-24T22:13:58 IST" duration-ms="1188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- UI_HBI.Test_HBI_Foreign_dashboard_visible -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

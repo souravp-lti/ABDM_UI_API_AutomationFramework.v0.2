@@ -6,8 +6,8 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="UI_HBI.Test_HBI_Foreign_dashboard_visible"/>
       <class name="UI_HBI.Test_HBI_HomePage_Features_Visible"/>
+      <class name="UI_HBI.Test_HBI_Foreign_dashboard_visible"/>
       <class name="API_Drug_Registry.Suggestion"/>
     </classes>
   </test> <!-- Test -->

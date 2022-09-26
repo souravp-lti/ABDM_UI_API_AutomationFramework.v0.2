@@ -7,6 +7,7 @@ import java.util.*;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,14 +24,17 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import Utility.JavaEmailSender;
 //import Utility.ScreenShot;
 import Utility.ScreenShot;
 
-public class MainBaseFeature {
+import Utility.JavaEmailSender;
+
+public class MainBaseFeature{
 	
 	public  static WebDriver driver;
     Properties prop = new Properties();
-	
+    
     
     public String readPropertyFile(String value) throws IOException
     {
@@ -80,6 +84,11 @@ public class MainBaseFeature {
         //driver.get(readPropertyFile("url"));
         
     }
+    //-------------------EMAIL---------------------------------//
+    
+    
+    
+    //---------------------------------------------------------//
       
     //EXTENT
     public static ExtentSparkReporter spark;
@@ -136,11 +145,12 @@ public class MainBaseFeature {
     }
      
     @AfterSuite
-    public void tearDown()
+    public void tearDown() throws  IOException
     
     {
-    	
+    	//JavaEmailSender();
         extent.flush();
+        JavaEmailSender.sendMailAttach("newtestmessage","testnewSubject","sourav.padhi94@gmail.com","sourav94padhi@gmail.com");
         
     }
 	

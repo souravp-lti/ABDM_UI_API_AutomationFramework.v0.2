@@ -8,7 +8,7 @@
   
    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.sourse>1.8</maven.compiler.sourse>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <aspectj.version>1.9.2</aspectj.version>
     </properties>
@@ -84,6 +84,16 @@
 	</dependency>
 	
 	
+	<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+	<dependency>
+	    <groupId>com.sun.mail</groupId>
+	    <artifactId>javax.mail</artifactId>
+	    <version>1.6.2</version>
+	</dependency>
+	
+	
+	
+	
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
 	    <groupId>io.github.bonigarcia</groupId>
@@ -108,7 +118,7 @@
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
 	    <version>7.4.0</version>
-	    <scope>test</scope>
+	    <scope>compile</scope>
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
@@ -224,7 +234,7 @@
 	  			<version>3.6.1</version>
 	  			<configuration>
 	  				<source>1.8</source>
-	  				<target>1.8</target>
+                	<target>1.8</target>
 	  			</configuration>
 	  		</plugin>
 	  		
@@ -240,7 +250,7 @@
 	  		<plugin>
 	  			<groupId>org.apache.maven.plugins</groupId>
 	  			<artifactId>maven-resources-plugin</artifactId>
-	  			<version>2.4</version>
+	  			<version>3.3.0</version>
 	  		</plugin>
 	  		
 	  		<plugin>
