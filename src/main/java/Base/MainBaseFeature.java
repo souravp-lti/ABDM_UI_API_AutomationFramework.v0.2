@@ -1,5 +1,6 @@
 package Base;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 import java.io.IOException;
@@ -7,6 +8,16 @@ import java.util.*;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,27 +35,45 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import Utility.JavaEmailSender;
+
 //import Utility.ScreenShot;
 import Utility.ScreenShot;
 
-import Utility.JavaEmailSender;
+
 
 public class MainBaseFeature{
 	
 	public  static WebDriver driver;
     Properties prop = new Properties();
     
-    
+    //-----------------------TAKING VALUE FROM CONFIG FILE-----------------------------------//
     public String readPropertyFile(String value) throws IOException
     {
     	prop.load(new FileInputStream("config.properties"));
         return prop.getProperty(value);
     }
+   //-----------------------TAKING VALUE FROM CONFIG FILE/-----------------------------------//
+    
+   //-----------------------CREATING DATE FOR EXTENT REPORT-----------------------------------//
+   Date currentDate = new Date();
+   final String date = currentDate.toString().replace(" ", "-").replace(":", "-");
+ 	
+   public String extentFilePathCreate() throws IOException {
+    	System.out.println("enter extentFilePathCreate()");
+    	
+        String extentFile = readPropertyFile("sysFileLocation")
+         		+ readPropertyFile("packageName")+"\\\\EXTENT_REPORT"+"\\\\"+date+"--"+"ExtentReport.html";
+        System.out.println("exit extentFilePathCreate()");
+    	return extentFile;
+    	
+    }
+  //-----------------------CREATING DATE FOR EXTENT REPORT/-----------------------------------//
     
     
+  //-----------------------INITIALIZATION-----------------------------------------------------//
     public void initialization() throws IOException
     {
+    	System.out.println("enter initialization()");
         String browserName = readPropertyFile("browserType");
         if(browserName.equalsIgnoreCase("chrome"))
         {
@@ -83,14 +112,88 @@ public class MainBaseFeature{
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.get(readPropertyFile("url"));
         
+        System.out.println("exit initialization()");
+        
     }
-    //-------------------EMAIL---------------------------------//
+  //-----------------------INITIALIZATION/-----------------------------------//
+    
+  //-------------------------EMAIL-------------------------------------------//
+    public void sendMailAttach(String toEmail, String fromEmail, String appPass) throws IOException {
+    	//beforeSuit();
+    	
+    	System.out.println("enter sendMailAttach()");
+       
+    	Properties properties = System.getProperties();
+    	System.out.println("PROPERTIES"+properties);
+    	
+    	properties.put("mail.smtp.host", readPropertyFile("hostName"));
+    	properties.put("mail.smtp.port", readPropertyFile("portName"));
+    	properties.put("mail.smtp.ssl.enable", readPropertyFile("sslBoolean"));
+    	properties.put("mail.smtp.auth", readPropertyFile("authBoolean"));	
+    	
+    	Session session = Session.getInstance(properties, new Authenticator() {
+    		
+    		@Override
+    	
+    		protected PasswordAuthentication getPasswordAuthentication() {
+    			
+    			return new PasswordAuthentication(fromEmail, appPass);
+    			
+    		}
+		});
+    	
+    
+    	
+    	session.setDebug(true);
+    	
+    	MimeMessage m =new MimeMessage(session);
+    	
+    	try {
+    		
+			m.setFrom(fromEmail);
+			m.addRecipient(Message.RecipientType.TO, new InternetAddress(toEmail));
+			m.setSubject("newTestSubject");
+			
+			//String path = "C:\\Users\\USER\\eclipse-workspace\\ABDM_Automation_Script.v.45\\EXTENT_REPORT\\Mon-Sep-26-12-37-54-IST-2022--ExtentReport.html";
+			
+			MimeMultipart mimeMultipart = new MimeMultipart();
+			
+			MimeBodyPart textMime = new MimeBodyPart();
+
+			MimeBodyPart fileMime = new MimeBodyPart();
+			
+			try {
+				textMime.setText("newTestMessage");
+				
+				//File file = new File("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.45\\\\EXTENT_REPORT\\\\Mon-Sep-26-12-37-54-IST-2022--ExtentReport.html");
+				
+				
+				File file = new File(extentFilePathCreate());//--------------------1-//
+				fileMime.attachFile(file);
+				
+				mimeMultipart.addBodyPart(textMime);
+				mimeMultipart.addBodyPart(fileMime);
+			}
+			catch (Exception e){
+				e.printStackTrace();
+			}
+			m.setContent(mimeMultipart);
+			
+			Transport.send(m);
+			
+			System.out.println("Email sent successfully");
+			
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		}
+    	System.out.println("exit sendMailAttach()");
+    }
     
     
+    //-----------------------------------EMAIL/--------------------------------------------------//
     
-    //---------------------------------------------------------//
       
-    //EXTENT
+    //-------------------------------EXTENT REPORT------------------------------------------------------//
     public static ExtentSparkReporter spark;
     public static ExtentReports extent;
     public static ExtentTest test;
@@ -98,11 +201,9 @@ public class MainBaseFeature{
     @BeforeSuite
     public void beforeSuit() throws IOException
     {
-    	Date currentDate = new Date();
-    	String date = currentDate.toString().replace(" ", "-").replace(":", "-");
-        //spark = new ExtentSparkReporter("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.24\\\\EXTENT_REPORT"+"\\\\ExtentReport.html");
-        spark = new ExtentSparkReporter(readPropertyFile("sysFileLocation")
-        		+ readPropertyFile("packageName")+"\\\\EXTENT_REPORT"+"\\\\"+date+"--"+"ExtentReport.html");
+    	System.out.println("enter beforesuite()");
+        spark = new ExtentSparkReporter(extentFilePathCreate());//--------------------2-----------//
+        //System.out.println(extentFile);
         extent = new ExtentReports();
         extent.attachReporter(spark);
          
@@ -110,6 +211,7 @@ public class MainBaseFeature{
         extent.setSystemInfo("Host Name", "HP");
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("User Name", "Sourav Padhi");
+        System.out.println("exit beforesuite()");
     }
      
     @AfterMethod
@@ -148,11 +250,16 @@ public class MainBaseFeature{
     public void tearDown() throws  IOException
     
     {
+    	System.out.println("enter aftersuite()");
     	//JavaEmailSender();
         extent.flush();
-        JavaEmailSender.sendMailAttach("newtestmessage","testnewSubject","sourav.padhi94@gmail.com","sourav94padhi@gmail.com");
         
+        //sendMailAttach("sourav.padhi94@gmail.com","sourav94padhi@gmail.com","hixqppatinhzmyrh");
+        sendMailAttach(readPropertyFile("toEmailAddress"),readPropertyFile("fromEmailAddress"),readPropertyFile("appPasswordGmail"));
+        
+        System.out.println("exit aftersuite()");
     }
-	
+    
+  //-------------------------------EXTENT REPORT/------------------------------------------------------//
 
 }
